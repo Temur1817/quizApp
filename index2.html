@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="full-screen" id="full">
+        <div class="container">
+            <h1 id="top">Multiple Test</h1><br>
+            <h2 id="top">Find Synonyms</h2>
+            <h2>Black</h2>
+            <div class="double">
+            <div class="first">
+                <div class="wrong" id="wrong" onclick="wrong()">Green</div>
+                <div class="correct" id="correct" onclick="correct()">Dark</div>
+            </div>
+            <div class="second" id="second">
+                <div class="wrong2" id="wrong2" onclick="wrong2()">Yellow</div>
+                <div class="wrong2" id="wrong3" onclick="wrong3()">Pink</div>
+        <button class="try" id="try" onclick="window.location.reload()">Try again!</button>
+      <a href="/index3.html" target="_blank">  <button class="next" id="next" onclick="next()">Next</button></a> 
+
+            </div>
+
+               </div>
+        </div>
+
+</div>
+<script>
+    function correct() {
+    document.getElementById('correct').style.background='blue';
+    document.getElementById('wrong').style.background='red';
+    document.getElementById('wrong2').style.background='red';
+    document.getElementById('wrong3').style.background='red';
+    document.getElementById('next').style.display='block';
+    
+}
+function wrong() {
+    document.getElementById('wrong').style.background='red';
+    document.getElementById('try').style.display='block';
+    
+}
+function next() {
+    document.getElementById('full').style.display='none';
+
+    
+}
+function wrong2() {
+    document.getElementById('wrong2').style.background='red';
+    document.getElementById('try').style.display='block';
+    
+}
+function wrong3() {
+    document.getElementById('wrong3').style.background='red';
+    document.getElementById('try').style.display='block';
+    
+}
+</script>
+</body>
+</html>
